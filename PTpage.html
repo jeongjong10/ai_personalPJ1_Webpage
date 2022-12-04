@@ -8,18 +8,23 @@
         * {
             padding: 0;
             margin: 0;
-            border: solid 1px gray;
+            
         }
         ol li {
             list-style: none;
+            
         }
-        a{ text-decoration: none;}
-        /* 헤더 레트프 */
+        a{ text-decoration: none;
+            background-color: aqua;
+        }
+
         header {
-            width: 900px;
+            width: 860px;
             height: 50px;
             border: solid 2px black;
         }
+
+        /* 헤더 레트프 */
         div.header_left {
             float: left;
             width: 20%;
@@ -43,26 +48,75 @@
             height: 50px;
             line-height: 50px;
         }
-        .header_center #one  {
+        div.header_center ol li {
             float: left;
         }
-        #two {
+        /* div.header_center ol li#l_one  {
             float: left;
         }
-        #three {
+        div.header_center ol li#l_two {
             float: left;
         }
+        div.header_center ol li#l_three {
+            float: left;
+        } */
 
         /* 헤더 라이트 */
         div.header_right {
             float: right;
             width: 20%;
             height: 50px;
-            line-height: 50px;
+            line-height: 70px;
         }
 
+        div.header_right ol {
+            float: right;
+            height: 50px;
+            background-color: aqua;
+        }
+        div.header_right ol li#r_one  {
+            float: right;
+        }
+        div.header_right ol li#r_two {
+            /* float: right; */
+        }
+        div.header_right ol li#r_three {
+            /* float: right; */
+        }
 
+        div.header_right img#insta {
+            height: 30px;
+        }
+        div.header_right img#github {
+            height: 30px;
+        }
+        div.header_right img#notion {
+            height: 30px;
+        }
 
+        /* 중단 */
+        div.container {
+            background-image: url("../img src/main_background_img.webp");
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        .container img {
+           
+        }
+        article.large_text { 
+            
+        }
+        article.large_text h2 {
+            
+            font-size: 100px;
+            text-align: center;
+        }
+        article.sub_text ol li {
+            
+            font-size: 30px;
+            text-align: center;
+        }
 
 
 
@@ -71,36 +125,68 @@
 
 </head>
 <body>
+    <!-- 상단 메뉴바 -->
     <header class="header">
         <div class="header_left">
             <a class="header_anchor" href="PTpage.html" alt="메인페이지">
-                <img id="header_icon" src="img src/다운로드.png" alt="제목 이모티콘">
+                <img id="header_icon" src="img src/blueheart.png" alt="제목 이모티콘">
                 <h1 id="header_title">i'm joel</h1>
             </a>
         </div>
         <div class="header_center">
             <ol>
-                <li id="one"><a href="#">TEMPLATES</a></li>
-                <li id="two"><a href="#">SITES IN USE</a></li>
-                <li id="three"><a href="#">SELECTION</a></li>
+                <li id="l_one"><a href="#">TEMPLATES</a></li>
+                <li id="l_two"><a href="#">SITES IN USE</a></li>
+                <li id="l_three"><a href="#">SELECTION</a></li>
             </ol>
         </div>
         <div class="header_right">
             <ol>
-                <li><a href="#"><img src="" alt="인스타"></a></li>
-                <li><a href="#"><img src="" alt="깃허브"></a></li>
-                <li><a href="#"><img src="" alt="노션"></a></li>
+                <li>
+                    <a id="r_one" href="#">
+                        <img id="insta" src="img src/insta.png" alt="인스타"><img src="" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a id="r_twe" href="#">
+                        <img id="github" src="img src/github.png" alt="깃허브"><img src="" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a id="r_one" href="#">
+                        <img id="notion" src="img src/notion.png" alt="노션"><img src="" alt="">
+                    </a>
+                </li>
             </ol>
-<img src="" alt="">
         </div>
-
     </header>
-
-    <main>
-
+    <!-- 상단 메뉴바끝 -->
+    <!-- 중단 메뉴바 -->
+    <main role="main">
+        <div class="container">
+            <!-- <img class="background_img" src="img src/main_background_img.webp" alt=""> -->
+            <article class="large_text">
+                <h2>Who Am I</h2>
+            </article>
+            <article class="sub_text">
+                <nav>
+                    <ol>
+                        <li><a href="#">Do the right Thing</a></li>
+                        <li><a href="#">Make origin works</a></li>
+                        <li><a href="#">live alive</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </div>
     </main>
-
+    <!-- 중단 메뉴바 끝 -->
+    <!-- 하단 메뉴바  -->
     <footer>
+        <div>
+            <nav>contact</nav>
+            <nav>support</nav>
+            <nav>terms</nav>
+        </div>
 
     </footer>
 </body>
